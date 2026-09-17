@@ -1,0 +1,13 @@
+{
+  "name": "coffeepoint-system",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "mongoose": "^9.10.1"
+  }
+}
